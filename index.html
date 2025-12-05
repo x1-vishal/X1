@@ -1,47 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Vishal Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vishal Ahirwar | Portfolio</title>
+
 <style>
-body {
-  font-family: Arial, sans-serif;
-  background: #111;
-  color: white;
-  margin: 0;
-  padding: 0;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Poppins", sans-serif;
 }
-header {
-  background: #222;
-  padding: 20px;
-  text-align: center;
+body{
+  background:#0d0d0d;
+  color:white;
 }
-nav a {
-  color: #00ffea;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
+header{
+  background:linear-gradient(45deg,#111,#222);
+  padding:25px;
+  text-align:center;
+  border-bottom:2px solid cyan;
 }
-section {
-  padding: 40px;
-  text-align: center;
+header h1{
+  font-size:32px;
 }
-.card {
-  background: #1a1a1a;
-  padding: 20px;
-  border-radius: 10px;
-  margin: 20px auto;
-  max-width: 600px;
+header p{
+  color:#00ffe7;
+  font-size:17px;
+}
+nav{
+  margin-top:10px;
+}
+nav a{
+  margin:0 12px;
+  text-decoration:none;
+  color:#00ffe7;
+  font-weight:600;
+}
+section{
+  padding:50px 20px;
+  text-align:center;
+}
+.card{
+  background:#151515;
+  border:1px solid #00ffe7;
+  padding:20px;
+  border-radius:12px;
+  max-width:650px;
+  margin:auto;
+  box-shadow:0 0 20px rgba(0,255,230,0.2);
+  animation:fade 1s ease;
+}
+@keyframes fade{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+.skills p{
+  background:#00ffe7;
+  color:black;
+  display:inline-block;
+  padding:6px 12px;
+  margin:6px;
+  border-radius:6px;
+  font-weight:600;
+}
+footer{
+  text-align:center;
+  padding:15px;
+  background:#111;
+  border-top:2px solid cyan;
+}
+footer p{
+  font-size:14px;
+  color:#00ffe7;
+}
+button{
+  background:#00ffe7;
+  color:black;
+  padding:10px 15px;
+  border:none;
+  border-radius:8px;
+  margin-top:10px;
+  cursor:pointer;
+  font-weight:600;
+}
+button:hover{
+  background:black;
+  color:#00ffe7;
+  border:2px solid #00ffe7;
 }
 </style>
 </head>
+
 <body>
 
 <header>
-  <h1>Hi, I'm Vishal 👋</h1>
-  <p>DBMS Enthusiast • Python Coder</p>
+  <h1>👋 Hi, I'm Vishal Ahirwar</h1>
+  <p>DBMS Specialist • Python Programmer • Digital Learner</p>
   <nav>
     <a href="#about">About</a>
+    <a href="#education">Education</a>
     <a href="#skills">Skills</a>
+    <a href="#ideas">Ideas</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
@@ -49,26 +110,58 @@ section {
 <section id="about">
   <div class="card">
     <h2>About Me</h2>
-    <p>I am Vishal, a B.Sc Computer Application student passionate about DBMS, Python and building digital solutions.</p>
+    <p>I am Vishal Ahirwar, a passionate learner pursuing B.Sc in Computer Application.
+    Technology, logic building and creativity inspire me.</p>
+    <p>I believe learning never stops — I improve everyday to build something meaningful.</p>
+  </div>
+</section>
+
+<section id="education">
+  <div class="card">
+    <h2>Education</h2>
+    <p><b>B.Sc (Computer Application)</b><br>
+       Maharaja Chhatrasal Bundelkhand University, Chhatarpur</p>
+
+    <p>Major Subject: <b>DBMS (Database Management System)</b></p>
+    <p>Minor Subject: <b>Python Programming</b></p>
+    <p>Vocational Subject: <b>Digital Marketing</b></p>
+    <p>Project / Internship: <b>Field Projects</b></p>
   </div>
 </section>
 
 <section id="skills">
-  <div class="card">
+  <div class="card skills">
     <h2>My Skills</h2>
-    <p>✔ Python</p>
-    <p>✔ DBMS</p>
-    <p>✔ HTML Basic Web Design</p>
+    <p>DBMS Concepts</p>
+    <p>SQL & Database Design</p>
+    <p>Python Coding</p>
+    <p>Problem Solving Skills</p>
+    <p>Web Development Basics</p>
+    <p>Digital Marketing</p>
+  </div>
+</section>
+
+<section id="ideas">
+  <div class="card">
+    <h2>My Ideas & Thoughts</h2>
+    <p>Technology must solve real-world problems.</p>
+    <p>Skills are more powerful than marks.</p>
+    <p>Every problem is a new opportunity to build something great.</p>
   </div>
 </section>
 
 <section id="contact">
   <div class="card">
     <h2>Contact Me</h2>
-    <p>Email: yourmail@gmail.com</p>
-    <p>Instagram: @yourusername</p>
+    <p>Email: <b>vishal1432d@gmail.com</b></p>
+    <p>Instagram: <b>@_____vishal__u7s_____</b></p>
+    <button onclick="alert('Thank you for visiting my portfolio, keep growing!')">Say Hello 👋</button>
   </div>
 </section>
+
+<footer>
+  <p>© 2025 Vishal Ahirwar | Designed & Built by Me</p>
+</footer>
 
 </body>
 </html>
